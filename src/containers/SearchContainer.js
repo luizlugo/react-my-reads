@@ -20,7 +20,6 @@ export default class SearchContainer extends React.Component {
         return _books.map((_book) => {
             const bookShelf = this.props.books.find((__book) => _book.id === __book.id);
             _book.shelf = bookShelf ? bookShelf.shelf : "none";
-            console.log(_book);
             return _book;
         });
     }
